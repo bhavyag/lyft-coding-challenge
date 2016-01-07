@@ -5,8 +5,8 @@ R = 6371 #radius of earth
 points = dict() #holds the point and its respective (latitude, longitude) tuple
 paths = [] #list of possible detour paths that can be taken
 
-#this function calculates the great-circle distance between
-#two latitute/longtitude points
+#this function calculates the great-circle distance between two latitute/longtitude points
+#equation referenced from: http://www.movable-type.co.uk/scripts/latlong.html
 def calc_dist((lat1, lon1), (lat2, lon2)):
 	#convert to radians
 	lat1 = radians(lat1)
